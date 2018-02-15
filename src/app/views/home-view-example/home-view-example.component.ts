@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomeViewExampleComponent implements OnInit {
 
   public paramExample: String;
-  public childData: String = 'Initial Data';
+  public childData: any = [];
 
   constructor() { }
 
