@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-example-component-shared',
@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExampleComponentSharedComponent implements OnInit {
 
+  @Input() componentParamExample;
+  @Output() emitExample: EventEmitter<any> = new EventEmitter<any>();
+
   constructor() { }
 
   ngOnInit() {
+    this;
+    debugger;
   }
+
+  onClick(){
+    this.emitExample.emit({data: 'Some new data'});
+  }
+
+
 
 }

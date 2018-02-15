@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeViewExampleComponent implements OnInit {
 
+  public paramExample: String;
+  public childData: String = 'Initial Data';
+
   constructor() { }
 
   ngOnInit() {
+    this.paramExample = 'Value param';
+  }
+
+  emitFnExample(event){
+    this.childData = event.data;
   }
 
 }

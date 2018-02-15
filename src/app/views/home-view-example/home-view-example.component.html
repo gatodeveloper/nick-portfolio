@@ -1,3 +1,5 @@
 <p>
   home-view-example works!
+  <span [innerHtml]="childData"></span>
 </p>
+<app-example-component-shared [componentParamExample]="paramExample" (emitExample)="emitFnExample($event)"></app-example-component-shared>
