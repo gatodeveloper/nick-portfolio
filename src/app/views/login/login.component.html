@@ -1,0 +1,26 @@
+<div class="container gs align-items-center flex-direction-column">
+  <div class="form-content">
+    <h1 class="logo">LOGO</h1>
+    <div class="container-steps">
+      <div class="login-modal-steps-container" [ngStyle]="{width: ((steps) * 100)+'%'}">
+        <div class="login-step-left {{ currentStep === 1 ? 'transform-right' : 'transform-left' }}">
+          <app-signin [redirectTo]="redirect" class="layout-100" (callback)="triggerEventLoginAndRegister($event)"></app-signin>
+        </div>
+        <div class="signup-step-right {{ currentStep === 2 ? 'transform-left' : 'transform-right' }}">
+          <app-signup class="layout-100"></app-signup>
+        </div>
+      </div>
+    </div>
+
+    <section class="gs justify-content-center flex-direction-column socials-login">
+      <div class="layout-100">
+        <a href="" (click)="login($event, 'facebook')" class="btn btn-primary btn-facebook btn-block">Facebook</a>
+        </div>
+        <div class="layout-100">
+          <a href=""(click)="login($event, 'google')" class="btn btn-primary btn-google btn-block">Google</a>
+          </div>
+        </section>
+        <p>Need an account?</p>
+        <a class="link" (click)="toggleSteps()">{{ currentStep === 1 ? 'Sign up' : 'Sign in' }}</a>
+  </div>
+</div>
