@@ -27,6 +27,7 @@ import { SignupComponent } from './components/signup/signup.component';
 import { ForgotPasswordComponent } from './views/forgot-password/forgot-password.component';
 
 import { environment } from 'environments/environment';
+import { ResetPasswordComponent } from './views/reset-password/reset-password.component';
 
 const socialLoginConfig = new AuthServiceConfig([
   {
@@ -50,7 +51,8 @@ export function provideConfig() {
     LoginComponent,
     SigninComponent,
     SignupComponent,
-    ForgotPasswordComponent
+    ForgotPasswordComponent,
+    ResetPasswordComponent
   ],
   imports: [
     BrowserModule,
