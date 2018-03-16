@@ -1,0 +1,69 @@
+.container-steps
+  width: 100%
+  overflow: hidden
+.login-modal-steps-container
+  display: flex
+  width: 200%
+
+  .transform-left
+    transform: translateX(-100%)
+  .transform-right
+    transform: translateX(0%)
+
+  .login-step-left, .signup-step-right
+    display: flex
+    width: 50%
+    transition: transform .5s ease
+
+img
+  width: 40%
+  margin: 20px 0px
+
+.socials-login
+  margin: 50px 0px
+  .layout-100
+    &:first-child
+      margin-bottom: 25px
+  .btn
+
+    .isocials-google, .isocials-facebook22
+      margin-right: 10px
+    &.btn-google
+      background-color: #db4437
+      &:hover
+        background-color: darken(#db4437, 4)
+    &.btn-facebook
+      background-color: #225197
+      &:hover
+        background-color: darken(#225197, 4)
+a.link
+  color: #444444
+  text-decoration: underline
+  cursor: pointer
+  font-size: 16px
+  user-select: none
+.modal-body
+  text-align: center
+  padding: 40px 70px
+.modal-header
+  position: absolute
+  z-index: 1
+  button
+    cursor: pointer
+    background: transparent
+    outline: none
+
+
+.container
+  height: 100vh
+  justify-content: center
+
+  .logo
+    text-align: center
+    padding: 1.5em 0
+
+  .form-content
+    max-width: 400px
+    text-align: center
+    padding: 20px
+    box-shadow: 1px 1px 60px #aaa
