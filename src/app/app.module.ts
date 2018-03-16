@@ -5,17 +5,18 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
 import { SocialLoginModule, AuthServiceConfig } from 'angular4-social-login';
 import { GoogleLoginProvider, FacebookLoginProvider } from 'angular4-social-login';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Config Files
 
 import { AppComponent } from './app.component';
 import { RoutingModule } from './routing/routing.module';
-import { httpFactory } from "./services/http/http.factory";
+import { httpFactory } from './services/http/http.factory';
 
 // Services
-import { ExampleServiceService } from "app/services/example-service/example-service.service";
+import { ExampleServiceService } from 'app/services/example-service/example-service.service';
 import { UserService } from 'app/services/user/user.service'
-import { LocalStorageService } from "app/services/localStorage/local-storage.service";
+import { LocalStorageService } from 'app/services/localStorage/local-storage.service';
 // Components and Views
 
 import { HomeViewExampleComponent } from 'app/views/home-view-example/home-view-example.component';
@@ -23,8 +24,9 @@ import { ExampleComponentSharedComponent } from './components/example-component-
 import { LoginComponent } from './views/login/login.component';
 import { SigninComponent } from './components/signin/signin.component';
 import { SignupComponent } from './components/signup/signup.component';
+import { ForgotPasswordComponent } from './views/forgot-password/forgot-password.component';
 
-import { environment } from "environments/environment";
+import { environment } from 'environments/environment';
 
 const socialLoginConfig = new AuthServiceConfig([
   {
@@ -47,13 +49,15 @@ export function provideConfig() {
     HomeViewExampleComponent,
     LoginComponent,
     SigninComponent,
-    SignupComponent
+    SignupComponent,
+    ForgotPasswordComponent
   ],
   imports: [
     BrowserModule,
     RoutingModule,
     HttpModule,
     FormsModule,
+    BrowserAnimationsModule,
     ToastrModule.forRoot(),
     SocialLoginModule
   ],
