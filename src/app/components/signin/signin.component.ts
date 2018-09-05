@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
 import { NgForm } from '@angular/forms';
-import { ToastrService } from 'ngx-toastr';
+//import { ToastrService } from 'ngx-toastr';
 import { UserService } from 'app/services/user/user.service';
 
 @Component({
@@ -18,7 +18,7 @@ export class SigninComponent implements OnInit {
 
   constructor(
     private router: Router,
-    private toastr: ToastrService,
+    //private toastr: ToastrService,
     private userService: UserService
   ) {}
 
@@ -38,7 +38,7 @@ export class SigninComponent implements OnInit {
         this.loadings.onSignIn = false;
       })
       .catch(err => {
-        this.toastr.error(err.error_description);
+        //this.toastr.error(err.error_description);
         this.loadings.onSignIn = false;
       });
   }

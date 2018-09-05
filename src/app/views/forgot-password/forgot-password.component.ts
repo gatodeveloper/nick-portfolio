@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 
-import { ToastrService } from 'ngx-toastr';
+//import { ToastrService } from 'ngx-toastr';
 
 import { UserService } from 'app/services/user/user.service';
 
@@ -14,7 +14,7 @@ import { UserService } from 'app/services/user/user.service';
 export class ForgotPasswordComponent implements OnInit {
   constructor(
     private userService: UserService,
-    private toastr: ToastrService,
+    //private toastr: ToastrService,
     private router: Router
   ) {}
 
@@ -26,14 +26,14 @@ export class ForgotPasswordComponent implements OnInit {
       .forgotPassword(value.email)
       .then(result => {
         const data = result.data || result._body || result;
-        this.toastr.success(data);
+        //this.toastr.success(data);
         this.router.navigate(['reset-password'], {
           queryParams: { email: value.email }
         });
       })
       .catch(error => {
         const err = error.error || error;
-        this.toastr.error(err);
+        //this.toastr.error(err);
       });
   }
 }

@@ -1,7 +1,7 @@
 import { Component, OnInit, Output, Input, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
 import { NgForm } from '@angular/forms';
-import { ToastrService } from 'ngx-toastr';
+//import { ToastrService } from 'ngx-toastr';
 import { UserService } from 'app/services/user/user.service';
 
 @Component({
@@ -21,7 +21,7 @@ export class SignupComponent implements OnInit {
   constructor(
     private router: Router,
     private userService: UserService,
-    private troast: ToastrService
+    //private troast: ToastrService
   ) {}
 
   ngOnInit() {}

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { UserService } from 'app/services/user/user.service';
-import { ToastrService } from 'ngx-toastr';
+//import { ToastrService } from 'ngx-toastr';
 import { Router } from '@angular/router';
 
 @Component({
@@ -13,7 +13,7 @@ export class ResetPasswordComponent implements OnInit {
 
   constructor(
     private userService: UserService,
-    private toastr: ToastrService,
+    //private toastr: ToastrService,
     private router: Router,
   ) { }
 
@@ -27,11 +27,11 @@ export class ResetPasswordComponent implements OnInit {
     this.userService.resetPassword(value.code, newPassword)
       .then( result => {
         const data = result.data || result._body || result;
-        this.toastr.success(data);
+        //this.toastr.success(data);
       })
       .catch( error => {
         const err = error.error || error;
-        this.toastr.error(err);
+        //this.toastr.error(err);
       })
 
   }

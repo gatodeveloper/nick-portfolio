@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule, Http, XHRBackend, RequestOptions} from '@angular/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ToastrModule } from 'ngx-toastr';
 import { SocialLoginModule, AuthServiceConfig } from 'angular4-social-login';
 import { GoogleLoginProvider, FacebookLoginProvider } from 'angular4-social-login';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -19,7 +18,6 @@ import { UserService } from 'app/services/user/user.service'
 import { LocalStorageService } from 'app/services/localStorage/local-storage.service';
 // Components and Views
 
-import { HomeViewExampleComponent } from 'app/views/home-view-example/home-view-example.component';
 import { ExampleComponentSharedComponent } from './components/example-component-shared/example-component-shared.component';
 import { LoginComponent } from './views/login/login.component';
 import { SigninComponent } from './components/signin/signin.component';
@@ -28,6 +26,10 @@ import { ForgotPasswordComponent } from './views/forgot-password/forgot-password
 
 import { environment } from 'environments/environment';
 import { ResetPasswordComponent } from './views/reset-password/reset-password.component';
+import { HomeComponent } from './views/home/home.component';
+import { MainHeaderComponent } from './components/main-header/main-header.component';
+
+import { MatIconModule } from '@angular/material/icon';
 
 const socialLoginConfig = new AuthServiceConfig([
   {
@@ -47,12 +49,13 @@ export function provideConfig() {
   declarations: [
     AppComponent,
     ExampleComponentSharedComponent,
-    HomeViewExampleComponent,
     LoginComponent,
     SigninComponent,
     SignupComponent,
     ForgotPasswordComponent,
-    ResetPasswordComponent
+    ResetPasswordComponent,
+    HomeComponent,
+    MainHeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -60,8 +63,8 @@ export function provideConfig() {
     HttpModule,
     FormsModule,
     BrowserAnimationsModule,
-    ToastrModule.forRoot(),
-    SocialLoginModule
+    SocialLoginModule,
+    MatIconModule
   ],
   providers: [
     {

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule, CanActivate, CanLoad } from '@angular/router';
 
-import { HomeViewExampleComponent } from 'app/views/home-view-example/home-view-example.component';
+import { HomeComponent } from 'app/views/home/home.component';
 import { LoginComponent } from 'app/views/login/login.component';
 import { ForgotPasswordComponent } from 'app/views/forgot-password/forgot-password.component'
 import { ResetPasswordComponent } from 'app/views/reset-password/reset-password.component';
@@ -9,7 +9,7 @@ import { ResetPasswordComponent } from 'app/views/reset-password/reset-password.
 
 
 const routes: Routes = [
-  { path: '', component: HomeViewExampleComponent },
+  { path: '', component: HomeComponent },
   { path: 'sign-in', component: LoginComponent},
   { path: 'forgot-password', component: ForgotPasswordComponent },
   { path: 'reset-password', component: ResetPasswordComponent },
