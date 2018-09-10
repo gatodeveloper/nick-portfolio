@@ -27,6 +27,7 @@ import { ForgotPasswordComponent } from './views/forgot-password/forgot-password
 import { environment } from 'environments/environment';
 import { ResetPasswordComponent } from './views/reset-password/reset-password.component';
 import { HomeComponent } from './views/home/home.component';
+import { DesignProcessComponent } from './views/design-process/design-process.component';
 import { MainHeaderComponent } from './components/main-header/main-header.component';
 
 import { MatIconModule } from '@angular/material/icon';
@@ -55,6 +56,7 @@ export function provideConfig() {
     ForgotPasswordComponent,
     ResetPasswordComponent,
     HomeComponent,
+    DesignProcessComponent,
     MainHeaderComponent
   ],
   imports: [
