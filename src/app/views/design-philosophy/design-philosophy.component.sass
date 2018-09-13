@@ -1,12 +1,14 @@
 .main-header-info
-  .left-col
-    img
-      max-width: 400px
-      height: auto
+  padding-bottom: 10em
+
+  .right-col
+    figure
+      padding-top: 14em
 
   .box-shadow
     font-weight: 300
     max-width: 500px
+    margin: auto
     line-height: 1.5em
 
     &:before
@@ -25,6 +27,8 @@
 h2.main-title
   font-size: 148px
   text-align: center
+  font-weight: 200
+  margin-bottom: .5em
 
   span
     display: block
@@ -43,16 +47,20 @@ h3.main-title
   margin: auto
 
   .list-icon
-    padding: 0 0 3em 
+    padding: 0 0 5em 
+
+    .gs
+      padding: 2em 0
 
     .left-col
+
       &:before
         content: ''
         position: absolute
-        height: 160px
-        border-left: 1px dashed #6100FF
-        left: 40px
-        top: 80px
+        border-left: 2px solid #000
+        height: 100%
+        right: 35px
+        top: 0
 
     &:last-child
       .left-col
@@ -65,7 +73,8 @@ h3.main-title
       background: #fff
       z-index: 2;
       position: relative
-      top: -10px
+      top: 50%
+      margin-top: -40px
 
       &.bkg-white
 
@@ -77,3 +86,4 @@ h3.main-title
     p
       font-weight: 300
       line-height: 1.5em
+      margin: 0

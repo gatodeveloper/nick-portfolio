@@ -26,9 +26,11 @@ import { ForgotPasswordComponent } from './views/forgot-password/forgot-password
 
 import { environment } from 'environments/environment';
 import { ResetPasswordComponent } from './views/reset-password/reset-password.component';
+import { MainHeaderComponent } from './components/main-header/main-header.component';
 import { HomeComponent } from './views/home/home.component';
 import { DesignProcessComponent } from './views/design-process/design-process.component';
-import { MainHeaderComponent } from './components/main-header/main-header.component';
+import { DesignPhilosophyComponent } from './views/design-philosophy/design-philosophy.component';
+import { StoryComponent } from './views/story/story.component';
 
 import { MatIconModule } from '@angular/material/icon';
 
@@ -55,9 +57,11 @@ export function provideConfig() {
     SignupComponent,
     ForgotPasswordComponent,
     ResetPasswordComponent,
+    MainHeaderComponent
     HomeComponent,
     DesignProcessComponent,
-    MainHeaderComponent
+    DesignPhilosophyComponent,
+    StoryComponent
   ],
   imports: [
     BrowserModule,

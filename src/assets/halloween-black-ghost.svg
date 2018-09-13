@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="432px" height="475px" viewBox="0 0 432 475" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>FC1AABF7-25BF-447C-AC55-907DFA9151EB</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <filter x="-22.3%" y="-19.3%" width="189.3%" height="149.3%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="100" dy="22" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="17" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.129953578 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M294.83525,191.227806 C268.94261,111.768079 190.334298,152.885547 213.196575,57.4084972 C216.587487,43.2419007 214.093548,7.80691976 181.470088,1.6542674 C181.297728,1.61376625 178.096763,1.15768813 177.917368,1.15064445 C145.886614,-3.43302873 133.729982,32.5760119 132.059149,47.0472475 C122.153746,132.883263 59.787693,82.0085411 12.8073772,151.098213 C-34.1711798,220.189647 63.6640263,196.232338 75.8206579,287.845931 C81.9447018,347.974284 67.0584561,354.915829 60.7638114,383.715665 C48.1903509,441.276598 152.951601,399.426588 196.263118,304.983198 C233.433004,220.38687 320.726132,270.685771 294.83525,191.227806 Z M169.109439,46.3939464 C168.017241,54.0962078 162.593189,59.6959315 156.996776,58.8999959 C151.402123,58.1040604 147.752671,51.2135828 148.846627,43.5113214 C149.938825,35.8090599 155.362877,30.2093363 160.955772,31.0052718 C166.552184,31.8012074 170.203395,38.691685 169.109439,46.3939464 Z M201.034667,50.9353575 C199.940711,58.6376189 194.518417,64.2373426 188.918487,63.441407 C183.323833,62.6454715 179.67614,55.7549939 180.768338,48.0527325 C181.860535,40.350471 187.282829,34.7507474 192.877482,35.5466829 C198.477412,36.3426185 202.128623,43.2330961 201.034667,50.9353575 Z" id="path-2"></path>
+        <filter x="-0.7%" y="-0.5%" width="101.3%" height="101.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="nickoProduction" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="philosophy" transform="translate(-977.000000, -294.000000)" fill-rule="nonzero">
+            <g id="halloween-black-ghost" filter="url(#filter-1)" transform="translate(977.000000, 304.000000)">
+                <g id="Shape">
+                    <use fill="#6100FF" xlink:href="#path-2"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
