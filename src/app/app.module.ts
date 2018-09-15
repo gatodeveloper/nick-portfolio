@@ -27,6 +27,7 @@ import { ForgotPasswordComponent } from './views/forgot-password/forgot-password
 import { environment } from 'environments/environment';
 import { ResetPasswordComponent } from './views/reset-password/reset-password.component';
 import { MainHeaderComponent } from './components/main-header/main-header.component';
+import { MainFooterComponent } from './components/main-footer/main-footer.component';
 import { HomeComponent } from './views/home/home.component';
 import { DesignProcessComponent } from './views/design-process/design-process.component';
 import { DesignPhilosophyComponent } from './views/design-philosophy/design-philosophy.component';
@@ -57,7 +58,8 @@ export function provideConfig() {
     SignupComponent,
     ForgotPasswordComponent,
     ResetPasswordComponent,
-    MainHeaderComponent
+    MainHeaderComponent,
+    MainFooterComponent,
     HomeComponent,
     DesignProcessComponent,
     DesignPhilosophyComponent,

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="20px" viewBox="0 0 26 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>0CDA347B-F6E3-4AF4-B9F7-0448CE82CC1D</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="footer" transform="translate(-146.000000, -5.000000)">
+            <g id="social">
+                <g transform="translate(49.000000, 0.000000)">
+                    <g id="ic_email_black_48px" transform="translate(95.000000, 0.000000)">
+                        <path d="M25,5 L5,5 C3.625,5 2.5125,6.125 2.5125,7.5 L2.5,22.5 C2.5,23.875 3.625,25 5,25 L25,25 C26.375,25 27.5,23.875 27.5,22.5 L27.5,7.5 C27.5,6.125 26.375,5 25,5 Z M25,10 L15,16.25 L5,10 L5,7.5 L15,13.75 L25,7.5 L25,10 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+                        <polygon id="Shape" points="0 0 30 0 30 30 0 30"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

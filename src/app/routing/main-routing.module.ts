@@ -14,6 +14,7 @@ import { ResetPasswordComponent } from 'app/views/reset-password/reset-password.
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
+  { path: 'projects', component: HomeComponent },
   { path: 'design-process', component: DesignProcessComponent },
   { path: 'design-philosophy', component: DesignPhilosophyComponent },
   { path: 'story', component: StoryComponent },
