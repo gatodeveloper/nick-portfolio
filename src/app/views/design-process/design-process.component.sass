@@ -28,7 +28,7 @@ h2.main-title
 
   span
     display: block
-    font-size: 110px
+    font-size: 115px
     font-weight: 100
 
 h3.main-title
@@ -49,10 +49,10 @@ h3.main-title
       &:before
         content: ''
         position: absolute
-        height: 160px
-        border-left: 1px dashed #6100FF
+        height: 218px
+        border-left: 1px dashed #000
         left: 40px
-        top: 80px
+        top: 40px
 
     &:last-child
       .left-col
@@ -62,12 +62,26 @@ h3.main-title
     i
       color: #6100FF
       font-size: 80px
-      background: #fff
       z-index: 2;
       position: relative
       top: -10px
 
       &.bkg-white
+
+        &:before
+          content: ''
+          position: absolute
+          top: 6px
+          left: 0
+          width: 100%
+          height: 67px
+          background: #fff
+          z-index: -1
+
+        &.i-search
+          &:before
+            top: 13px
+            height: 37px
 
     h4
       font-size: 50px
