@@ -9,13 +9,33 @@ header
       color: #000
       text-decoration: none
       display: inline-block
-      padding: .5em
-      margin: 0 .5em
-      border-bottom: 2px solid #fff
+      padding: .5em 0
+      margin: 0 1em
+      //border-bottom: 3px solid #fff
+      position: relative
+      overflow: hidden
+
+      &:after
+        content: ''
+        position: absolute
+        background: #fff
+        height: 3px
+        width: 100%
+        left: -100%
+        bottom: 0
+        transition: left .5s
+
+      &:hover
+        &:after
+          background-color: #000
+          left: 0
 
       &.active-link
         font-weight: 700
-        border-bottom: 2px solid #000
+
+        &:after
+          background-color: #000
+          left: 0
       
     .brand
       font-weight: bold
