@@ -49,19 +49,25 @@
       padding: 6em 0
 
       &:nth-child(odd)
-        //background-color: red
-  
-        .box-shadow
-          margin-right: -50%
-          padding-right: 50%
-          
-      &:nth-child(even)
-        //background-color: blue
+
+        .col-left
+          order: 2
+
+        .col-right
+          order: 1
 
         .box-shadow
           text-align: right
           margin-left: -50%
           padding-left: 50%
+
+
+      &:nth-child(even)
+  
+        .box-shadow
+          margin-right: -50%
+          padding-right: 50%
+          
 
 
 
@@ -77,6 +83,7 @@
 
       p
         font-weight: 100
+        line-height: 1.5em
 
       a.btn
         margin-top: 2em
@@ -88,5 +95,32 @@
       img
         max-width: 100%
         height: auto
+    
+    .cubic-assets,
+    .emerge-assets
+      figure
+        margin: 0
+
+    .cubic-assets
+      ._macbook
+        position: absolute
+        top: 70px
+        
+      ._smartphone
+        position: absolute
+        right: 0
+        top: 180px
+
+    .emerge-assets
+      ._macbook
+        position: absolute
+        top: 140px
+        right: 0
+        
+      ._smartphone
+        position: absolute
+        left: 20px
+        top: 50px
+
 
       
