@@ -1,7 +1,7 @@
 .main-header-info
   .left-col
     img
-      max-width: 400px
+      max-width: 100%
       height: auto
 
   .box-shadow
@@ -41,15 +41,16 @@ h3.main-title
 .list-icons
   max-width: 900px
   margin: auto
+  padding-top: 9em
 
   .list-icon
-    padding: 0 0 3em 
+    padding: 0 0 5em 
 
     .left-col
       &:before
         content: ''
         position: absolute
-        height: 218px
+        height: 130%
         border-left: 1px dashed #000
         left: 40px
         top: 40px
@@ -79,9 +80,19 @@ h3.main-title
           z-index: -1
 
         &.i-search
+          left: -7px
+
           &:before
             top: 13px
             height: 37px
+
+        &.i-cached
+
+          &:before
+            top: 13px
+            height: 37px
+
+            
 
     h4
       font-size: 50px
