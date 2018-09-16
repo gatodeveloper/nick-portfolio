@@ -6,11 +6,6 @@ import { DesignProcessComponent } from 'app/views/design-process/design-process.
 import { DesignPhilosophyComponent } from 'app/views/design-philosophy/design-philosophy.component';
 import { StoryComponent } from 'app/views/story/story.component';
 
-import { LoginComponent } from 'app/views/login/login.component';
-import { ForgotPasswordComponent } from 'app/views/forgot-password/forgot-password.component'
-import { ResetPasswordComponent } from 'app/views/reset-password/reset-password.component';
-
-
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -19,9 +14,6 @@ const routes: Routes = [
   { path: 'design-philosophy', component: DesignPhilosophyComponent },
   { path: 'story', component: StoryComponent },
 
-  { path: 'sign-in', component: LoginComponent},
-  { path: 'forgot-password', component: ForgotPasswordComponent },
-  { path: 'reset-password', component: ResetPasswordComponent },
   // {
   //   path: 'nested-view-example',
   //   children: [
