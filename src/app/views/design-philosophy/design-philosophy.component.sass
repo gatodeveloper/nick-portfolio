@@ -59,7 +59,6 @@ h3.main-title
         content: ''
         position: absolute
         border-left: 2px solid #000
-        height: 100%
         right: 35px
         top: 0
 
@@ -82,4 +81,42 @@ h3.main-title
     p
       font-weight: 300
       line-height: 1.5em
-      margin: 0
+      margin-top: 0
+      margin-bottom: 0
+
+
+// Animations
+
+.list-icon
+  transition: opacity 1s
+  opacity: 0
+
+  i
+    position: relative
+    transition: left 1s ease-in-out
+    left: -50px
+
+  p
+    position: relative
+    transition: left 1s ease-in-out
+    left: 50px
+
+  .left-col
+
+    &:before
+      transition: height 1s
+      transition-delay: .5s
+      height: 0
+
+  &.apply-animation
+    opacity: 1
+
+    i,
+    p
+      left: 0
+
+
+    .left-col
+
+      &:before
+        height: 100%
