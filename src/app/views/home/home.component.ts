@@ -46,8 +46,6 @@ export class HomeComponent implements OnInit {
       this.animations.apply6 = true;
     }
 
-
-
   };
 
 }

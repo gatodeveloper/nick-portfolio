@@ -50,7 +50,6 @@ h3.main-title
       &:before
         content: ''
         position: absolute
-        height: 130%
         border-left: 1px dashed #000
         left: 40px
         top: 40px
@@ -102,3 +101,39 @@ h3.main-title
     p
       font-weight: 300
       line-height: 1.5em
+
+
+
+// Animations:
+
+.list-icon
+  opacity: 0
+  transition: opacity 1s
+
+  p
+    position: relative
+    transition: top 2s
+    top: 100px
+
+  i
+    transition: margin 1s ease-in-out
+    margin-left: -50px
+
+  .left-col
+    &:before
+      transition: height 1s ease-in-out
+      transition-delay: 1s
+      height: 0
+
+  &.apply-animation
+    opacity: 1
+
+    p
+      top: 0
+
+    i
+      margin-left: 0
+
+    .left-col
+      &:before
+        height: 130%
