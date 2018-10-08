@@ -35,6 +35,31 @@ body
     color: #fff
 
 
+.btn-animation
+  transition: all .3s
+
+  i,
+  span
+    display: inline-block
+    vertical-align: middle
+
+  i
+    transition: all .3s ease-in-out
+    overflow: hidden
+    text-align: left
+    opacity: 0
+    margin-right: -25px
+    position: relative
+    right: 0
+
+  &:hover
+    i
+      opacity: 1
+      margin-right: 0
+      right: -10px
+      
+
+
 .main-wrap-inner
   max-width: 1100px
   margin: auto

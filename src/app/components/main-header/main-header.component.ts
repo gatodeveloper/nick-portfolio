@@ -19,7 +19,6 @@ export class MainHeaderComponent implements OnInit {
     var wh = window.innerHeight;
     var py = window.pageYOffset;
     var scrollPosition = wh + py;
-    this.mx = (scrollPosition > this.mx) ? scrollPosition : this.mx;
 
     (py > 10) ? this.showShadow = true : this.showShadow = false;
     
