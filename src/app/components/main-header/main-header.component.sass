@@ -1,11 +1,14 @@
 header
-  padding: 1em 0
+  padding: .5em 0
   width: 100%
   position: fixed
   top: 0
   left: 0
   background-color: #fff
   z-index: 10
+
+  &.show-shadow
+    box-shadow: 0 0 1px rgba(0, 0, 0, .1)
 
   nav
     &.nav-brand
@@ -16,7 +19,7 @@ header
       text-decoration: none
       display: inline-block
       padding: .5em 0
-      margin: 0 1em
+      margin: 0 1em 0 
       //border-bottom: 3px solid #fff
       position: relative
       overflow: hidden
