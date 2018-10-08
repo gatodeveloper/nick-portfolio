@@ -67,12 +67,13 @@
         .corner
           box-shadow: 3px -3px 5px 0 rgba(0, 0, 0, 0.05)
           right: -10px
-        
+
+      .box-shadow-line
         &:after
-          right: -66px
+          right: -16px
 
         &:before
-          right: -50px
+          //right: -50px
         
     &:nth-child(even)
       text-align: right
@@ -85,11 +86,13 @@
           box-shadow: -3px 3px 5px 0 rgba(0, 0, 0, 0.05)
           left: -10px
 
+      .box-shadow-line
+
         &:after
-          left: -66px
+          left: -16px
 
         &:before
-          left: -51px
+          //left: -51px
 
     &:last-child
 
@@ -97,11 +100,12 @@
         &:before
           display: none
 
-  .box-shadow
-    display: inline-block
-    max-width: 500px
-    padding: 20px 30px
-    border: 1px solid #eaeaea
+  .box-shadow-line
+    position: absolute
+    height: 100%
+    //outline: 1px solid #130101
+    z-index: 100
+    right: 50%
 
     &:after
       content: ''
@@ -119,6 +123,29 @@
       width: 0
       height: 110%
       top: 65px
+
+  .box-shadow
+    display: inline-block
+    max-width: 500px
+    padding: 20px 30px
+    border: 1px solid #eaeaea
+
+    // &:after
+    //   content: ''
+    //   position: absolute
+    //   background-color: #6100FF
+    //   border-radius: 100%
+    //   top: 30px
+    //   width: 32px
+    //   height: 32px
+
+    // &:before
+    //   content: ''
+    //   position: absolute
+    //   border-right: 1px dashed #000
+    //   width: 0
+    //   height: 110%
+    //   top: 65px
     
     .corner
       width: 20px
@@ -142,3 +169,36 @@
     b
       font-weight: 500
       font-size: 20px
+
+// Animations
+
+.list-card
+  transition: all 1s
+  top: 100px
+  opacity: 0
+
+  &.apply-animation
+    opacity: 1
+    top: 0
+
+.timeline-item
+  
+  .box-shadow
+    transition: all 1s
+    position: relative
+    opacity: 0
+
+  &:nth-child(odd)
+    .box-shadow
+      transform: translate(-100px, 0)
+
+  &:nth-child(even)
+    .box-shadow
+      transform: translate(100px, 0)
+
+  &.apply-animation
+
+    .box-shadow
+      opacity: 1
+      transform: translate(0, 0)
+
