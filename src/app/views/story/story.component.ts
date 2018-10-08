@@ -66,5 +66,6 @@ export class StoryComponent implements OnInit {
       this.animations.apply11 = true;
     }
     
+  }
 
 }

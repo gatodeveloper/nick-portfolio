@@ -44,6 +44,7 @@ export class DesignPhilosophyComponent implements OnInit {
       this.animations.apply4 = true;
     }
 
+  }
 
 
 }
