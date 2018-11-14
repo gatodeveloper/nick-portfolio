@@ -3,11 +3,16 @@
   margin: auto
 
 .main-header-info
-  padding: 5em 0
+  //padding: 5em 0
+
+  figure
+    margin: 0
 
   img
-    max-width: 286px
+    max-width: 380px
     height: auto
+    top: 80px
+    position: relative
 
   h2.main-title
     padding: 0
@@ -24,8 +29,9 @@
 
   span
     display: block
-    font-size: 110px
-    font-weight: 100
+    font-size: 40px
+    font-weight: 500
+    padding: 50px 0 0
 
 .main-title
   font-size: 50px
@@ -39,18 +45,25 @@
   padding-bottom: 5em
 
   .list-card
-    padding: 2em
     margin-bottom: 3em
-    border-left: 5px solid #6100FF
-    
+
+    .list-card-inner
+      //border-left: 5px solid #6100FF
+      border-radius: 8px
+      padding: 1em 2em
+      border: 1px solid #DFDFE2
+      background-color: #fff
+
     h3
       font-size: 30px
-      padding: 0
+      //font-weight: 500
+      padding: .5em 0
       margin: 0
 
     p
       font-weight: 300
       line-height: 1.8em
+      margin: 0
 
 
 .list-timeline
@@ -110,7 +123,8 @@
     &:after
       content: ''
       position: absolute
-      background-color: #6100FF
+      background-color: #000
+      //background-color: #6100FF
       border-radius: 100%
       top: 30px
       width: 32px
