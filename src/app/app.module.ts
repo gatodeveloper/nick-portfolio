@@ -26,6 +26,7 @@ import { DesignPhilosophyComponent } from './views/design-philosophy/design-phil
 import { StoryComponent } from './views/story/story.component';
 
 import { MatIconModule } from '@angular/material/icon';
+import { ClipboardModule } from 'ngx-clipboard';
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import { MatIconModule } from '@angular/material/icon';
     HttpModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
+    ClipboardModule
   ],
   providers: [
     {

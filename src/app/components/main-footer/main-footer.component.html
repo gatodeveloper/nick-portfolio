@@ -1,17 +1,27 @@
 <footer class="main-wrap">
-  <nav class="icons">
-    <a href="https://www.linkedin.com/in/hellonicko/" target="_blank">
-      <img src="assets/linkedin.svg" alt="">
-    </a>
-    <a href="https://medium.com/@hellonicko" target="_blank">
-      <img src="assets/medium.svg" alt="">
-    </a>
-    <a href="nichpeckham@gmail.com">
-      <img src="assets/email.svg" alt="">
-    </a>
-  </nav>
-  <div class="copy">
-    <span>Designed by yours truly with </span>
+
+  <div class="_icons">
+    <div class="_icons-inner">
+      <span class="clipboard-area gs" *ngIf="showClipboardArea">
+        <small [ngClass]="{'show-copied-text': showCopiedText}">email copied to clipboard</small>
+        <input type="text" value="nichpeckham@gmail.com">
+        <button ngxClipboard (cbOnSuccess)="copied($event)" [cbContent]="'nichpeckham@gmail.com'" ><img src="assets/shape.svg" alt=""></button>
+      </span>
+      <nav class="icons">
+        <a href="https://www.linkedin.com/in/hellonicko/" target="_blank">
+          <img src="assets/linkedin.svg" alt="">
+        </a>
+        <a href="https://medium.com/@hellonicko" target="_blank">
+          <img src="assets/medium.svg" alt="">
+        </a>
+        <div class="email" (click)="showClipboardArea = !showClipboardArea">
+          <img src="assets/email.svg" alt="">
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="_copy">
+    <span>Desig_ned by yours truly with </span>
     <i class="material-icons">favorite</i>
   </div>
 </footer>

@@ -26,6 +26,7 @@
     "@angular/router": "6.1.6",
     "core-js": "^2.4.1",
     "hagrid.io": "0.0.8",
+    "ngx-clipboard": "^11.1.9",
     "rxjs": "^6.3.2",
     "rxjs-compat": "^6.3.2",
     "zone.js": "^0.8.26"

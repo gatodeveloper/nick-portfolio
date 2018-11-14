@@ -7,9 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainFooterComponent implements OnInit {
 
+  public showCopiedText : boolean = false;
+  public showClipboardArea : boolean = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  copied(event){
+    var self = this;
+    console.log('Copied')
+    this.showCopiedText = true;
+    setTimeout(function(){
+      console.log('removed')
+      self.showCopiedText = false;
+      self.showClipboardArea = false;
+    }, 3000)
   }
 
 }

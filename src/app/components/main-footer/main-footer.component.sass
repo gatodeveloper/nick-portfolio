@@ -2,22 +2,68 @@ footer
   text-align: center
   padding: 10em 1em 3em
 
+._icons
+  text-align: center
 
-nav
-  a
-    color: #000
-    font-size: 30px
+  ._icons-inner
     display: inline-block
-    margin: 10px
-    vertical-align: middle
-
-    img
-      width: 25px
-      height: auto
-      display: block
 
 
-.copy
+  nav
+    a,
+    .email
+      color: #000
+      font-size: 30px
+      display: inline-block
+      margin: 10px
+      vertical-align: middle
+      position: relative
+      cursor: pointer
+
+      img
+        width: 25px
+        height: auto
+        display: block
+
+
+  .clipboard-area
+    position: absolute
+    bottom: 50px
+    padding: 10px 20px
+    left: -50%
+    background-color: #FFF
+    border: 1px solid #DFDFE2
+    border-radius: 8px
+    box-shadow: 9px 8px 17px 0 rgba(0, 0, 0, 0.1)
+
+    small
+      position: absolute
+      top: -25px
+      font-size: 12px
+      left: 58px
+      opacity: 0
+      transition: opacity .3s
+
+      &.show-copied-text
+        opacity: 1
+
+    button
+      border: none
+      background-color: transparent
+      cursor: pointer
+      outline: none!important
+    
+
+    input
+      border: none
+      outline: none!important
+      background-color: transparent
+      font-size: 16px
+      width: 200px
+
+
+
+._copy
 
   i,
   span
@@ -32,3 +78,4 @@ nav
     font-size: 20px
     top: -2px
     position: relative
+    
