@@ -31,16 +31,12 @@ export class StoryComponent implements OnInit {
     if(scrollPosition >= 820){
       this.animations.apply1 = true;
     }
-
     if(scrollPosition >= 1140){
       this.animations.apply2 = true;
     }
-
     if(scrollPosition >= 1340){
       this.animations.apply3 = true;
     }
-
-
     if(scrollPosition >= 2080){
       this.animations.apply4 = true;
     }
@@ -64,6 +60,12 @@ export class StoryComponent implements OnInit {
     }
     if(scrollPosition >= 4580){
       this.animations.apply11 = true;
+    }
+    if(scrollPosition >= 4980){
+      this.animations.apply12 = true;
+    }
+    if(scrollPosition >= 5400){
+      this.animations.apply13 = true;
     }
     
   }
